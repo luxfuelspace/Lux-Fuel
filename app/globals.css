@@ -130,10 +130,6 @@ nav.scrolled {
 
 .logo-mark { width: 56px; height: 56px; flex-shrink: 0; }
 .logo-mark svg { width: 100%; height: 100%; overflow: visible; }
-.logo-orbit-outer { transform-box: view-box; transform-origin: 50px 50px; animation: spin-cw 24s linear infinite; }
-.logo-orbit-mid   { transform-box: view-box; transform-origin: 50px 50px; animation: spin-ccw 16s linear infinite; }
-.logo-dot-red     { transform-box: view-box; transform-origin: 50px 50px; animation: spin-cw 8s linear infinite; }
-.logo-dot-blue    { transform-box: view-box; transform-origin: 50px 50px; animation: spin-ccw 12s linear infinite; }
 
 @keyframes spin-cw  { from { transform: rotate(0deg);} to { transform: rotate(360deg);} }
 @keyframes spin-ccw { from { transform: rotate(0deg);} to { transform: rotate(-360deg);} }
@@ -321,12 +317,6 @@ body > section.closing::before {
 }
 
 .hero-orbital svg { width: 100%; height: 100%; overflow: visible; }
-.ring-1 { transform-box: view-box; transform-origin: 250px 250px; animation: spin-cw 80s linear infinite; }
-.ring-2 { transform-box: view-box; transform-origin: 250px 250px; animation: spin-ccw 60s linear infinite; }
-.ring-3 { transform-box: view-box; transform-origin: 250px 250px; animation: spin-cw 40s linear infinite; }
-.sat-1  { transform-box: view-box; transform-origin: 250px 250px; animation: spin-cw 30s linear infinite; }
-.sat-2  { transform-box: view-box; transform-origin: 250px 250px; animation: spin-ccw 22s linear infinite; }
-.sat-3  { transform-box: view-box; transform-origin: 250px 250px; animation: spin-cw 18s linear infinite; }
 
 .hero-content { position: relative; z-index: 2; }
 
@@ -571,11 +561,6 @@ div.section-eyebrow span.num {
   overflow: visible;
 }
 
-.closing-ring-a { transform-box: view-box; transform-origin: 250px 250px; animation: spin-cw 60s linear infinite; }
-.closing-ring-b { transform-box: view-box; transform-origin: 250px 250px; animation: spin-ccw 40s linear infinite; }
-.closing-ring-c { transform-box: view-box; transform-origin: 250px 250px; animation: spin-cw 30s linear infinite; }
-.closing-sat-1  { transform-box: view-box; transform-origin: 250px 250px; animation: spin-cw 24s linear infinite; }
-.closing-sat-2  { transform-box: view-box; transform-origin: 250px 250px; animation: spin-ccw 18s linear infinite; }
 
 .closing .container {
   position: relative;
@@ -922,9 +907,8 @@ footer {
 
 /* === RESPONSIVE === */
 @media (prefers-reduced-motion: reduce) {
-  .stars-far, .stars-near, .nebula,
-  .logo-orbit-outer, .logo-orbit-mid, .logo-dot-red, .logo-dot-blue,
-  .ring-1, .ring-2, .ring-3, .sat-1, .sat-2, .sat-3 { animation: none; }
+  .stars-far, .stars-near, .nebula { animation: none; }
+  .hero-orbital, .closing-orbital { display: none; }
 }
 
 @media (max-width: 1000px) {
