@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import Cursor from '@/components/cursor'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -77,6 +78,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased text-white bg-black">
+        <Cursor />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
