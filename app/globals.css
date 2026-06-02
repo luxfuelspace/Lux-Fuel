@@ -904,7 +904,6 @@ footer {
 /* === RESPONSIVE === */
 @media (prefers-reduced-motion: reduce) {
   .stars-far, .stars-near, .nebula { animation: none; }
-  .hero-orbital, .closing-orbital { display: none; }
 }
 
 @media (max-width: 1000px) {
