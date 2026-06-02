@@ -304,23 +304,19 @@ body > section.closing::before {
 
 .hero-orbital {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+  height: 90vmin;
+  max-width: 900px;
+  max-height: 900px;
   pointer-events: none;
   opacity: 0.5;
   z-index: 0;
 }
 
-.hero-orbital svg {
-  width: 90vmin;
-  height: 90vmin;
-  max-width: 900px;
-  max-height: 900px;
-  overflow: visible;
-  flex-shrink: 0;
-}
+.hero-orbital svg { width: 100%; height: 100%; overflow: visible; }
 
 .hero-content { position: relative; z-index: 2; }
 
@@ -547,23 +543,19 @@ div.section-eyebrow span.num {
 
 .closing-orbital {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vmin;
+  height: 80vmin;
+  max-width: 720px;
+  max-height: 720px;
   pointer-events: none;
   opacity: 0.4;
   z-index: 0;
 }
 
-.closing-orbital svg {
-  width: 80vmin;
-  height: 80vmin;
-  max-width: 720px;
-  max-height: 720px;
-  overflow: visible;
-  flex-shrink: 0;
-}
+.closing-orbital svg { width: 100%; height: 100%; overflow: visible; }
 
 
 .closing .container {
