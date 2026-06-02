@@ -25,8 +25,6 @@ export default function Hero() {
       angle: 0,
     }));
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
     let last: number | null = null;
     let raf: number;
 
