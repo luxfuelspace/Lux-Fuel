@@ -925,7 +925,21 @@ footer {
   nav { padding: 16px 20px; }
   .container { padding: 0 20px; }
   section { padding: 80px 0; }
-  .hero-content { padding-top: 40px; }
+
+  /* Hero mobile improvements */
+  .hero-content { padding-top: 16px !important; }
+  .hero-eyebrow {
+    font-size: 9px !important;
+    letter-spacing: 0.14em !important;
+    margin-bottom: 28px !important;
+    padding: 7px 14px !important;
+    white-space: nowrap !important;
+  }
+  .hero h1 { margin-bottom: 24px !important; }
+  .hero-sub { margin-bottom: 24px !important; }
+  .hero-tagline { margin-bottom: 40px !important; }
+  .hero-orbital { opacity: 0.65 !important; }
+
   .protocol-stats { grid-template-columns: 1fr; }
   .stat { border-right: none !important; }
   .stat:last-child { border-bottom: none; }
