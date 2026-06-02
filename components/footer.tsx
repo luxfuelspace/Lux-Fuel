@@ -19,13 +19,23 @@ export default function Footer() {
     };
   }, [open]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('sending');
-    setTimeout(() => {
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Something went wrong.');
       setStatus('sent');
       setForm({ name: '', email: '', message: '' });
-    }, 1200);
+    } catch (err) {
+      alert(err instanceof Error ? err.message : 'Failed to send. Please try again.');
+      setStatus('idle');
+    }
   };
 
   const handleClose = () => {
