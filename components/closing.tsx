@@ -18,7 +18,7 @@ export default function Closing() {
     if (!svg) return;
 
     const state = ANIMS.map(a => ({
-      el: svg.getElementById(a.id) as SVGGElement | null,
+      el: svg.querySelector(`#${a.id}`) as SVGGElement | null,
       degsPerSec: a.degsPerSec,
       dir: a.dir,
       angle: 0,
