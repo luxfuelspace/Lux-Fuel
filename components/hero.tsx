@@ -3,27 +3,30 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-orbital" aria-hidden="true">
         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="250" cy="250" r="230" fill="none" stroke="#3a8fd9" strokeWidth="1" strokeDasharray="2 8" opacity="0.25">
-            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="80s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="250" cy="250" r="180" fill="none" stroke="#e63946" strokeWidth="1.5" strokeDasharray="6 8" opacity="0.5">
-            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="-360 250 250" dur="60s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="250" cy="250" r="135" fill="none" stroke="#3a8fd9" strokeWidth="1" strokeDasharray="3 5" opacity="0.45">
-            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="40s" repeatCount="indefinite" />
-          </circle>
+          <g>
+            <circle cx="250" cy="250" r="230" fill="none" stroke="#3a8fd9" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.4"/>
+            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="80s" repeatCount="indefinite"/>
+          </g>
+          <g>
+            <circle cx="250" cy="250" r="180" fill="none" stroke="#e63946" strokeWidth="2" strokeDasharray="6 8" opacity="0.6"/>
+            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="-360 250 250" dur="60s" repeatCount="indefinite"/>
+          </g>
+          <g>
+            <circle cx="250" cy="250" r="135" fill="none" stroke="#3a8fd9" strokeWidth="1.5" strokeDasharray="3 5" opacity="0.55"/>
+            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="40s" repeatCount="indefinite"/>
+          </g>
           <circle cx="250" cy="250" r="90" fill="none" stroke="#ffffff" strokeWidth="2" opacity="0.7"/>
           <g>
-            <circle cx="250" cy="20" r="6" fill="#e63946"/>
-            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="30s" repeatCount="indefinite" />
+            <circle cx="250" cy="20" r="7" fill="#e63946"/>
+            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="30s" repeatCount="indefinite"/>
           </g>
           <g>
-            <circle cx="430" cy="250" r="5" fill="#3a8fd9"/>
-            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="-360 250 250" dur="22s" repeatCount="indefinite" />
+            <circle cx="430" cy="250" r="6" fill="#3a8fd9"/>
+            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="-360 250 250" dur="22s" repeatCount="indefinite"/>
           </g>
           <g>
-            <circle cx="115" cy="250" r="4" fill="#5a6478" opacity="0.8"/>
-            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="18s" repeatCount="indefinite" />
+            <circle cx="115" cy="250" r="5" fill="#7a8498"/>
+            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="18s" repeatCount="indefinite"/>
           </g>
         </svg>
       </div>
