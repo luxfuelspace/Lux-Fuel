@@ -32,9 +32,11 @@ body {
 /* === CUSTOM CURSOR === */
 @media (pointer: fine) {
   *, *::before, *::after { cursor: none !important; }
+  .cursor-dot, .cursor-ring { display: block; }
 }
 
 .cursor-dot {
+  display: none;
   position: fixed;
   top: 0; left: 0;
   width: 6px; height: 6px;
@@ -54,6 +56,7 @@ body {
 }
 
 .cursor-ring {
+  display: none;
   position: fixed;
   top: 0; left: 0;
   width: 36px; height: 36px;
